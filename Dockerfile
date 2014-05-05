@@ -1,9 +1,9 @@
 # Base python 3.4 build, inspired by
 # https://github.com/crosbymichael/python-docker/blob/master/Dockerfile
-FROM ubuntu:13.10
+FROM ubuntu:14.04
 MAINTAINER Michael Twomey, mick@twomeylee.name
 
-RUN echo "deb http://ppa.launchpad.net/fkrull/deadsnakes/ubuntu saucy main" > /etc/apt/sources.list.d/deadsnakes.list \
+RUN echo "deb http://ppa.launchpad.net/fkrull/deadsnakes/ubuntu trusty main" > /etc/apt/sources.list.d/deadsnakes.list \
     && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys DB82666C
 
 RUN apt-get update \
