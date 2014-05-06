@@ -16,6 +16,7 @@ RUN apt-get update \
     libpq-dev \
     make \
     mercurial \
+    pkg-config \
     python3.4 \
     python3.4-dev \
     ssh \
