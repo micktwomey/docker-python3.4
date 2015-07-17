@@ -23,11 +23,11 @@ RUN apt-get update \
     && apt-get autoremove \
     && apt-get clean
 
-ADD https://raw.githubusercontent.com/pypa/pip/701a80f451a62aadf4eeb21f371b45424821582b/contrib/get-pip.py /root/get-pip.py
+ADD https://raw.githubusercontent.com/pypa/pip/5d927de5cdc7c05b1afbdd78ae0d1b127c04d9d0/contrib/get-pip.py /root/get-pip.py
 RUN python3.4 /root/get-pip.py
-RUN pip3.4 install -U "setuptools==15.1"
-RUN pip3.4 install -U "pip==6.1.1"
-RUN pip3.4 install -U "virtualenv==12.1.1"
+RUN pip3.4 install -U "setuptools==18.0.1"
+RUN pip3.4 install -U "pip==7.1.0"
+RUN pip3.4 install -U "virtualenv==13.1.0"
 
 CMD []
 ENTRYPOINT ["/usr/bin/python3.4"]
