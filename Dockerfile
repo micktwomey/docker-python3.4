@@ -25,9 +25,9 @@ RUN apt-get update \
 
 ADD https://raw.githubusercontent.com/pypa/pip/5d927de5cdc7c05b1afbdd78ae0d1b127c04d9d0/contrib/get-pip.py /root/get-pip.py
 RUN python3.4 /root/get-pip.py
-RUN pip3.4 install -U "setuptools==18.0.1"
-RUN pip3.4 install -U "pip==7.1.0"
-RUN pip3.4 install -U "virtualenv==13.1.0"
+RUN pip3.4 install -U "setuptools==18.4"
+RUN pip3.4 install -U "pip==7.1.2"
+RUN pip3.4 install -U "virtualenv==13.1.2"
 
 CMD []
 ENTRYPOINT ["/usr/bin/python3.4"]
